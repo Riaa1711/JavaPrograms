@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class GreaterThanHundred2
+{
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner( System.in);
+		System.out.println("Enter a number");
+		int number=scan.nextInt();
+		if(number>100)
+		{ 
+			System.out.println(" The number is greater than 100");
+		}
+	
+	}
+}
+

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class LearningToTakeInputsFromUser
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner (System.in);
+		System.out.println(" Enter your id");
+		int stuId =scan.nextInt();
+		System.out.println("Enter your name");
+		String stuName =scan.next();
+		System.out.println("Enter your marks");
+		double stumarks =scan.nextDouble();
+		System.out.println(" Enter the first character in your name");
+		char ch =scan.next().charAt(0);
+		System.out.println(" Are you an Indian");
+		boolean isIndian =scan.nextBoolean();
+		System.out.println("***************Student Details*************");
+		System.out.println("Student Id :"+stuId);
+		System.out.println("Student name :"+stuName);
+		System.out.println("Student marks:"+stumarks);
+		System.out.println(" first character: "+ch);
+		System.out.println(" Is Indian:"+isIndian);
+
+		
+	}
+}

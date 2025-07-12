@@ -1,0 +1,16 @@
+class Method2 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(" Main method starts");
+		add(10,20);
+		System.out.println("Main method ends");
+	}
+	public static void add( int i,int j)
+	{
+		int res=i+j;
+		System.out.println(res);
+	}
+}
+		
+

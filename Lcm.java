@@ -1,0 +1,19 @@
+class  Lcm
+{
+	public static void main(String[] args) 
+	{
+		int n1=3;
+		int n2=5;
+		int lcm=0;
+		for(int i=n1;i<=n1*n2;i++)
+		{
+			if(i%n1==0 && i%n2==0)
+			{
+				lcm=i;
+				break;
+			
+	}
+}
+System.out.println(lcm);
+	}
+}

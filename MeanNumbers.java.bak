@@ -1,0 +1,12 @@
+class MeanNumbers 
+{
+	public static void main(String[] args) 
+	{
+		int num=24567;
+		num=num/10;
+		while(num!=9)
+		{
+			System.out.println(num);
+		}
+	}
+}

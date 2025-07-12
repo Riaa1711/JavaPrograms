@@ -1,0 +1,21 @@
+class  DuckOrNot
+{
+	public static void main(String[] args) 
+	{
+		int num=1289;
+		while(num!=0)
+		{
+			int ld=num%10;
+			if(ld==0)
+			{
+				System.out.println("duck");
+			}
+			else
+			{
+				System.out.println("not a duck number");
+			}
+			num=num/10;
+		
+	}
+	}
+}

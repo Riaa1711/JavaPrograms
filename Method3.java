@@ -1,0 +1,17 @@
+class  Method3
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Main method starts");
+		int res=add();
+			System.out.println(res);
+		System.out.println("Main method ends");
+	}
+	public static int add()
+	{
+		int i=30;
+		int j=80;
+		int res=i+j;
+		return res;
+}
+}

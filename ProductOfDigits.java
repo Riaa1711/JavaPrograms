@@ -1,0 +1,14 @@
+class ProductOfDigits
+{
+	public static void main(String[] args) 
+	{
+		int num=456;
+		int prod =1;
+		while(num!=0)
+		{
+			int ld=num%10;
+			prod= prod*ld;
+			num=num/10;}
+			System.out.println(prod);
+	}
+}

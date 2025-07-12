@@ -1,0 +1,17 @@
+class  BuyAProduct
+{
+	public static void main(String[] args) 
+	{
+		int money=800;
+		int product price=750;
+		if(money>=product price)
+		{
+			System.out.println("Purchased successful");
+		}
+		else
+		{
+			System.out.println("Insufficient funds");
+		}
+
+	}
+}

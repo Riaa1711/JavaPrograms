@@ -1,0 +1,19 @@
+class Smallest 
+{
+	public static void main(String[] args) 
+	{
+		int num=9876;
+		int smallest=9;
+		while(num>0)
+		{
+			int ld=num%10;
+			if(ld<smallest)
+			{
+				smallest=ld;
+			}
+			num=num/10;
+		}
+		System.out.println(smallest);
+	
+	}
+}

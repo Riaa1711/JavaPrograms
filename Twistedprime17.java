@@ -1,0 +1,27 @@
+class Twistedprime17 
+{
+	public static void main(String[] args) 
+	{
+		int num=26;
+		int temp=num;
+		int rev=0;
+		int count=0;
+		while(num!=0)
+		{
+			int ld=num%10;
+			rev=rev*10+ld;
+			num=num/10;
+		}
+		for(int i=1;i<=rev;i++)
+		{
+			if(rev%i==0)
+			{
+				count++;
+			}
+		}
+		if(count==2)
+		{
+			System.out.println("tp");
+		}
+	}
+}

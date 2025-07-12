@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Strongnumber 
+{
+	public static void main(String[] args) 
+	{
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Enter the number");
+	int num=scan.nextInt();
+	int temp=num;
+	int sum=0;
+	while(num!=0)
+		{
+		int fact=1;
+		 int ld=num%10;
+		for(int i=1;i<=ld;i++)
+			{
+			fact=fact*i;
+			}
+			sum=sum+fact;
+			num=num/10;
+		}
+		if(temp==sum)
+		{
+			System.out.println("strong number");
+		}
+		else
+		{
+			System.out.println("not a strong number ");
+		}
+
+		
+
+
+
+
+		
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class PassOrFail2
+{
+	public static void main( String[]args)
+	{
+	Scanner scan = new Scanner( System.in);
+	System.out.println(" Enter the score ");
+	int score = scan.nextInt();
+	if (score>=50)
+	{
+		System.out.println("passed");
+	}
+	else 
+	{
+		System.out.println(" Failed");
+	}
+
+}
+}

@@ -1,0 +1,43 @@
+class BooleanPrime 
+{
+	public static void main(String[] args) 
+	{
+		//step1 way to use Method with return type
+		//boolean res=prime(13);
+		//System.out.println(res);
+
+	
+		//step 2 way to use Method with return type
+		//System.out.println(prime(27));
+
+		//step 3 way to use method with return type
+		if(prime(11))
+		{
+			System.out.println("Prime number ");
+		}
+		else 
+		{
+			System.out.println(" Not a prime number");
+		}
+		
+	}
+	public static boolean prime(int num)
+	{
+		int count=0;
+		for(int i=1;i<=num;i++)
+		{
+			if(num%i==0)
+			{
+				count++;
+			}
+		}
+			if(count==2)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+		}
+   }
+}

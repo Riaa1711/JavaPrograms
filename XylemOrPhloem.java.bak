@@ -1,0 +1,29 @@
+class  XylemOrPhloem
+{
+	public static void main(String[] args) 
+	{
+	 int num=27642;
+	 int sum1=0;
+	 int sum2=0;
+	 int ld=num%10;
+	 sum1=ld;
+	 num=num/10;
+	 while(num>9)
+		{
+		 ld=num%10;
+		 sum2=sum2+ld;
+		 num=num/10;
+		   }
+		 sum1=sum1+num;
+		 if(sum1==sum2)
+		{
+			 System.out.println("xylem number");
+		}
+		else
+		{
+			System.out.println("phloem number");
+		}
+
+
+}
+}

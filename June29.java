@@ -1,0 +1,48 @@
+
+import java.util.Scanner;
+class June29 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		if(SumofFDandLD(num)==SumofMD(num))
+		{
+			System.out.println("Given number is Xylem number");
+		}
+		else
+		{
+			System.out.println("Given number is Phloem number");
+		}
+	}
+		public static int SumofFDandLD(int num)
+		{
+			int sum=0;
+			int ld=num%10;
+			while(num>9)
+			{
+				num=num/10;
+			}
+			sum=num+ld;
+		return sum;
+		}
+		public static int SumofMD(int num)
+		{
+			int sum=0;
+			num=num/10;
+			while(num>9)
+			{
+				int ld=num%10;
+				sum=ld+sum;
+				num=num/10;
+			}
+			return sum;
+		}
+	}
+
+
+
+		
+	
+

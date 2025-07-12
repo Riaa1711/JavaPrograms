@@ -1,0 +1,25 @@
+class WhileLoopPrime 
+{
+	public static void main(String[] args) 
+	{
+		int num =793815;
+		while(num!=0)
+		{
+			int ld =num%10;
+			int count=0;
+			for(int i=1;i<=ld;i++)
+			{
+				if(ld%i==0)
+				{
+					count++;
+				}
+			}
+			if (count==2)
+			{
+				System.out.println(ld);
+			}
+			num=num/10;
+
+		}
+	}
+}

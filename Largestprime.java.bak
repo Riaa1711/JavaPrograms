@@ -1,0 +1,40 @@
+class Largestprime
+{
+	public static void main(String[] args) 
+	{
+		int n =5;
+		int ans=largestprime(n);
+		System.out.println(ans);
+	}
+	static int largestprime(int n)
+	{
+		int largest=-1;
+		for(int i=2;i<=n ;i++)
+		{
+			if(n%i==0 && isprime(i))
+			{ 
+				
+				if(i>largest)
+				{
+					largest=i;
+				}
+			}
+		}
+		}
+		return largest;
+
+}
+static boolean isprime(int n)
+	{
+	if(n<2)return false;
+	for(int i=2;i*i<=n;i++)
+		{
+		if(n%2==0)
+			{
+			return false;
+			}
+		}
+		return true;
+	}
+}
+

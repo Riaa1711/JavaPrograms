@@ -1,0 +1,25 @@
+ import java.util.Scanner;
+ class Magicnumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		int num=scan.nextInt();
+		int sum=0;
+		while(num>9)
+		{
+			while(num!=0)
+			{
+				int ld=num%10;
+				sum=sum+ld;
+				num=num/10;
+			}
+			num=sum;
+			sum=0;
+		}
+		if(num==1)
+		{
+			System.out.println("Magic number ");
+		}
+	}
+}

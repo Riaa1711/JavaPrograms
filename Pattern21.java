@@ -1,0 +1,37 @@
+class Pattern21 
+{
+	public static void main(String[] args) 
+	{ 
+	for(int i =1;i<=5;i++)
+		{
+		int num1=2;
+	int num2=1;
+		if(i%2==0)
+			{
+		for(int j=5;j>=1;j--)
+			{
+			if(i>=j)
+					{
+				System.out.print(num1);
+				num1=num1+2;
+				}
+			}
+			}
+				else 
+				{
+					for(int j=5;j>=1;j--)
+				{
+					System.out.print(num2);
+					num2=num2+2;
+				}
+			}
+			
+				
+			
+			System.out.println();
+		}
+		
+	}
+	
+}
+

@@ -1,0 +1,55 @@
+import java.util.Scanner;
+class Megaprime 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		int num=scan.nextInt();
+		boolean isMegaprime=true;
+		if(prime(num))
+		{
+			while(num!=0)
+			{
+				int ld=num%10;
+				if(!prime(ld))
+				{
+					isMegaprime=false;
+					break;
+				}
+				num=num/10;
+			}
+			if(isMegaprime==true)
+			{
+				System.out.println("megaprime");
+			}
+			else
+			{
+				System.out.println("not a megaprime but prime");
+			}
+		}
+		else
+		{
+			System.out.println("not a prime number ");
+		}
+	}
+
+public static boolean prime(int num)
+		{
+	int count=0;
+	for(int i=1;i<=num;i++)
+			{
+		if(num%i==0)
+				{
+			count++;
+				}
+			}
+			if(count==2)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+	}
+}

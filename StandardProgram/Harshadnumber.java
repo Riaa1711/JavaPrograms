@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Harshadnumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the number ");
+		int num=scan.nextInt();
+		int sum=0;
+		int temp=num;
+		while(num!=0)
+		{
+			int ld=num%10;
+			sum=sum+ld;
+			num=num/10;
+		}
+		if(temp%sum==0)
+		{
+			System.out.println("Harshad number");
+		}
+		else
+		{
+			System.out.println("not a harshad number ");
+		}
+	
+		
+	}
+}

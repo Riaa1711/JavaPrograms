@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class XylemOrPhloemByMethods 
+{
+	public static void main(String[] args) 
+	{
+	   Scanner scan=new Scanner (System.in);
+	   System.out.println("Enter the number ");
+	   int num=scan.nextInt();
+	   if(sumofFdandLd(num)==sumofMD(num)
+		{
+		   System.out.println("Given number is a xylem number");
+		}
+		else{
+			System.out.println("Given number is a phloem number");
+		}
+	}
+	public static int sumofFdandLd(int num)
+	{
+		int sum=0;
+		int ld=num5%10;
+		while(num>9)
+		{
+			num=num/10;
+		}
+		sum=ld+num;
+		return sum;
+	}
+	public static int sumofMD(int num)
+	{
+		int sum=0;
+		num=num/10;
+		while(num>9)
+		{
+			int ld=num%10;
+			sum=sum+ld;
+			num=num/10;
+		}
+		return sum;
+	}
+
+}

@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class MagicNumbersUsingMethods
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan =new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num= scan.nextInt();
+		while(num>9)
+		{
+			num=sum(num);
+		}
+		if(num==1)
+		{
+			System.out.println("magic number");
+		}
+		else
+			{
+			System.out.println(" not a magic number");
+			}
+		}
+	public static int sum(int num)
+	{
+		int sum=0;
+		while(num!=0)
+		{
+				int ld=num%10;
+				sum=sum+ld;
+				num=num/10;
+			}
+		
+		return sum;
+	}
+
+
+}
+ 

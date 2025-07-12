@@ -1,0 +1,32 @@
+class JumpingNumbers 
+{
+	public static void main(String[] args) 
+	{
+		int num=105;
+		System.out.println("The jumping numbers are"+num+ " ");
+		for(int i=1;i<=num;i++)
+		{
+			if(isjumping(i))
+			{
+			System.out.println(i+" ");
+		}
+		}
+	}
+	static boolean isjumping(int num)
+	{
+		int prevDigit=num%10;
+		num=num/10;
+		while(num>0)
+		{
+			if(num<9)return true;
+			int currentDigit=num%10;
+			if(Math.abs(currentDigit-prevDigit)!=1)
+			{
+				return false;
+			}
+			prevDigit=currentDigit;
+			num=num/10;
+		}
+	}
+}
+		

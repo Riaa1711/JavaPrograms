@@ -1,0 +1,11 @@
+class  GreaterThanHundred
+{
+	public static void main(String[] args) 
+	{
+		int num =250;
+		if(num>100)
+		{
+			System.out.println("The number is gretater then 100);
+		}
+	}
+}

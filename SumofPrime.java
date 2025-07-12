@@ -1,0 +1,39 @@
+class SumofPrime 
+{
+
+	//function to check if a number is prime
+	public static boolean isPrime(int num)
+	{
+		if(num<=1)
+			return false;
+		for(int i=2;i<=Math.sqrt(num);i++)
+		{
+			if(num%i==0)
+				return false;
+		}
+		return true;
+	}
+	// Function to check if n can be expressed as a sum of two primes
+	public static boolean canBeExpressedAsSumofTwoPrimes(int num)
+	{
+		for(int i=2;i<=num/2;i++)
+		{
+		if(isPrime(i) && isPrime(num-i))
+		{
+			System.out.println("True." +num+"="+i+"+" +(num-i));
+			return true;
+		}
+		}
+		return false;
+	}
+	public static void main(String[] args) 
+	{
+		int num=74;
+		if(!canBeExpressedAsSumofTwoPrimes(num))
+		{
+			System.out.println("Cannot be expressed as sum of two primes");
+		}
+	}
+}
+
+		

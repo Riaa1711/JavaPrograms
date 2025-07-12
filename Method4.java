@@ -1,0 +1,18 @@
+class  Method4
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Main starts");
+		int res=add(60,50);
+		System.out.println(res);
+		System.out.println(" Main ends");
+		
+
+	}
+	public static int add(int i,int j)
+	{
+		int res=i+j;
+		return res;
+	}
+	
+}

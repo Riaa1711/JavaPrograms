@@ -1,0 +1,23 @@
+class  Palindrome2
+{
+	public static void main(String[] args) 
+	{
+	
+		for( int i=1;i<=100;i++)
+		{
+			int num=i;
+			int temp=num;
+			int rev=0;
+			while(num!=0)
+			{
+				int ld =num%10;
+				rev=rev*10+ld;
+				num=num/10;
+			}
+			if(rev== temp)
+			{
+				System.out.println(i);
+	}
+}
+}
+}

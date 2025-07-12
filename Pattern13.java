@@ -1,0 +1,25 @@
+ class Pattern13 
+{
+	public static void main(String[] args) 
+	{
+		for(int i=1;i<=5;i++)
+		{
+			char ch1='A';
+			char ch2='a';
+			for( int j=1;j<=5;j++)
+			{
+				if(i%2==0)
+				{
+				System.out.print((int)ch2 +"\t");
+				ch2=(char)(ch2+2);
+				}
+				else
+				{
+					System.out.print((int)ch1+"\t");
+					ch1=(char)(ch1+2);
+				}
+			}
+			System.out.println();
+			}
+	}
+}
